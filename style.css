@@ -33,6 +33,7 @@ body,
 .divisor3 {
 	width: 85vw;
 	height: 60vh;
+	object-fit: cover;
 }
 .divisor4 {
 	justify-content: center;
@@ -41,7 +42,7 @@ body,
 	text-align: center;
 	width: 60vw;
 	height: 25vh;
-	font-size: 50px;
+	font-size: 35px;
 }
 .divisor5 {
 	content: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Nuages.gif");
@@ -68,7 +69,6 @@ body,
 		justify-content: flex-end;
 		height: 92vh;
 		width: 100vw;
-		border: 1px solid red;
 	}
 	.divisor3 {
 		display: none;
@@ -81,7 +81,7 @@ body,
 		text-align: center;
 		width: 100vw;
 		height: 86vh;
-		font-size: 100px;
+		font-size: xx-large;
 	}
 	.divisor5 {
 		display: none;
