@@ -1,0 +1,18 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 85vw;
+	height: 85vh;
+}
+@media only screen and (max-width: 500px) {
+	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 90vh;
+	}
+}

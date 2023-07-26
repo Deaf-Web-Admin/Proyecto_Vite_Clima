@@ -1,0 +1,89 @@
+:root {
+	--Primary: #461959;
+	--Secondary: #7a316f;
+	--Tertiary: #cd6688;
+	--Quaternary: #aed8cc;
+	--Go: Green;
+	--Stop: Red;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,
+.container {
+	display: flex;
+	flex-direction: column;
+}
+.divisor1 {
+	display: flex;
+	flex-direction: row;
+	height: 85vh;
+	width: 100vw;
+}
+.divisor2 {
+	display: flex;
+	flex-direction: row;
+	width: 85vw;
+	height: 25vh;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.divisor3 {
+	width: 85vw;
+	height: 60vh;
+}
+.divisor4 {
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	width: 60vw;
+	height: 25vh;
+	font-size: 50px;
+}
+.divisor5 {
+	content: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Nuages.gif");
+	background-size: cover;
+	background-position: center;
+	width: 25vw;
+	height: 25vh;
+	object-fit: cover;
+}
+.divisor3,
+.divisor4,
+.divisor5 {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		357deg,
+		rgba(2, 0, 36, 0.5074404761904762) 0%,
+		rgba(9, 9, 121, 0.4009978991596639) 7%,
+		rgba(0, 212, 255, 0.5018382352941176) 100%
+	);
+}
+@media only screen and (max-width: 500px) {
+	.divisor1 {
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 92vh;
+		width: 100vw;
+		border: 1px solid red;
+	}
+	.divisor3 {
+		display: none;
+	}
+	.divisor2,
+	.divisor4 {
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		text-align: center;
+		width: 100vw;
+		height: 86vh;
+		font-size: 100px;
+	}
+	.divisor5 {
+		display: none;
+	}
+}
